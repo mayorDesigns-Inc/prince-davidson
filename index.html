@@ -1,0 +1,1645 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
+    <meta name="author" content="MayorDesigns" />
+    <meta name="description" content="Personal website for Prince Davidson." />
+
+    <!-- Font Imports -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&family=Roboto:wght@300;400;500;700&family=Nunito:wght@400;600;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Core Style -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Icons -->
+    <link rel="stylesheet" href="css/font-icons.css" />
+    <link rel="stylesheet" href="one-page/css/et-line.css" />
+
+    <!-- One Page Module Specific Stylesheet -->
+    <link rel="stylesheet" href="one-page/onepage.css" />
+
+    <!-- Plugins/Components CSS -->
+    <link rel="stylesheet" href="css/swiper.css" />
+    <link rel="stylesheet" href="css/components/radio-checkbox.css" />
+    <!-- Radio Checkbox Plugin -->
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Document Title
+	============================================= -->
+    <title>Prince Davidson</title>
+
+    <style>
+      .slider-element .image_fade .bi-play {
+        position: absolute;
+        display: block;
+        left: 50%;
+        top: 50%;
+        z-index: 99;
+        color: #000;
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        background-color: #fff;
+        border-radius: 50%;
+        text-align: center;
+        padding-left: 4px;
+        margin-top: -20px;
+        margin-left: -20px;
+      }
+
+      .rotate-text {
+        position: absolute;
+        left: 40px;
+        top: 50%;
+        letter-spacing: 3px;
+        color: #ddd !important;
+        font-weight: 400;
+        font-size: 11px;
+        writing-mode: vertical-rl;
+        -webkit-transform: translateY(-50%) rotate(-180deg);
+        -moz-transform: translateY(-50%) rotate(-180deg);
+        white-space: nowrap;
+        cursor: pointer;
+        z-index: 5;
+        text-transform: uppercase;
+      }
+
+      .rotate-text:before {
+        padding-bottom: 7px;
+        content: "\2190";
+        display: inline-block;
+      }
+
+      .block-hero-9 .swiper-slide,
+      .block-hero-9 .swiper-pagination span {
+        --color: #606567;
+      }
+
+      .block-hero-9 h1,
+      .block-hero-9 h2,
+      .block-hero-9 h3,
+      .block-hero-9 h4,
+      .block-hero-9 h5,
+      .block-hero-9 h6,
+      .block-hero-9 p {
+        font-family: Inter, serif;
+        color: var(--color, #444);
+      }
+
+      .block-hero-9 .swiper-horizontal > .swiper-pagination-bullets,
+      .block-hero-9 .swiper-pagination-custom,
+      .block-hero-9 .swiper-pagination-fraction {
+        left: auto;
+        right: 0;
+      }
+
+      .block-hero-9 .swiper-pagination {
+        padding: 4px 6px;
+        width: auto;
+      }
+
+      .block-hero-9 .swiper-pagination span:hover,
+      .block-hero-9 .swiper-pagination span.swiper-pagination-bullet-active {
+        background-color: var(--color) !important;
+      }
+
+      .block-hero-9 .swiper-pagination span {
+        border-color: var(--color) !important;
+      }
+
+      .bg-p-dark,
+      .dark .swiper-scrollbar-drag {
+        background-color: #4f3267;
+      }
+
+      .bg-p-dark,
+      .bg-p-dark h1,
+      .bg-p-dark h2,
+      .bg-p-dark h3,
+      .bg-p-dark h4,
+      .bg-p-dark p {
+        color: #f3e3ec;
+      }
+
+      .font-display {
+        font-family: "Playfair Display", serif;
+      }
+
+      .swiper-vertical > .swiper-scrollbar {
+        right: 60px;
+        top: 30px;
+        width: 3px;
+        height: 170px;
+        margin: 30px 0;
+      }
+
+      .dark .swiper-scrollbar {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+      .dark .swiper-scrollbar-drag {
+        background: #f3e3ec;
+      }
+
+      .swiper-pagination-fraction {
+        position: absolute;
+        top: -35px;
+        bottom: auto;
+        left: 0px;
+        height: 233px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        font-family: "Playfair Display", serif;
+        font-size: 1.25rem;
+      }
+
+      .swiper-pagination-current:before,
+      .swiper-pagination-total:before {
+        content: "0";
+      }
+
+      .swiper-pagination-total {
+        color: #f3e3ec;
+      }
+
+      @media (min-width: 992px) {
+        #section-testimonials > .row.section-sticky {
+          position: -webkit-sticky;
+          position: sticky;
+          top: 0;
+          height: 100vh;
+          -webkit-box-align: start;
+          -webkit-align-items: flex-start;
+          -ms-flex-align: start;
+          align-items: flex-start;
+        }
+
+        .swiper-navs {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="stretched">
+    <!-- Document Wrapper
+	============================================= -->
+    <div id="wrapper">
+      <!-- Slider
+		============================================= -->
+      <section id="slider" class="slider-element min-vh-100 include-header">
+        <div
+          class="slider-inner"
+          style="
+            background: linear-gradient(
+                to bottom,
+                rgba(0, 0, 0, 0.2),
+                rgba(0, 0, 0, 0.5)
+              ),
+              url('./hero.jpg') 50% 10% no-repeat;
+            background-size: cover !important;
+            background-attachment: fixed;
+          "
+          data-top-top="background-position: 50% 10%;"
+          data-top-bottom="background-position: 50% 90%;"
+        >
+          <div class="container dark">
+            <div class="vertical-middle ignore-header">
+              <div class="d-flex">
+                <div class="col-lg-6">
+                  <h2
+                    class="display-3 text-uppercase ls-2 mb-3"
+                    style="font-weight: 900"
+                  >
+                    Prince Davidson
+                  </h2>
+                  <p class="lead">
+                    I am a measure of the dispersion of a frequency distribution
+                    that is the square root of the arithmetic mean of the
+                    squares of the deviation of each of the class frequencies
+                    from the arithmetic mean of the frequency distribution. In
+                    other words, I am the parameter that indicates the way in
+                    which a probability function or a probability density
+                    function is centered around its mean and that is equal to
+                    the square root of the moment in which the deviation from
+                    the mean is squared.
+                    <br />
+                    <br />
+                    My name is Prince Davidson – I am a
+                    <span style="font-weight: bold">STANDARD DEVIATION</span>
+                    <br />
+                    <i>Welcome to my website</i>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="row position-absolute d-none d-lg-flex"
+              style="bottom: 0px; z-index: 4"
+            >
+              <h3>Latest works</h3>
+              <div class="col-md-6 col-xl-4">
+                <h4>
+                  <a href="#" class="text-white"
+                    >The BrainFarm Group
+                    <i class="bi-arrow-right" style="font-size: 13px"></i></a
+                  ><br /><small class="fw-normal text-white-50"
+                    >Flagship company of all Prince Davidson's for-profit
+                    ventures</small
+                  >
+                </h4>
+              </div>
+              <div class="col-md-6 col-xl-4">
+                <h4>
+                  <a href="#" class="text-white"
+                    >MadTech Innovations
+                    <i class="bi-arrow-right" style="font-size: 13px"></i></a
+                  ><br /><small class="fw-normal text-white-50"
+                    >Mad tech innovations from Africa</small
+                  >
+                </h4>
+              </div>
+              <div class="col-xl-4 d-none d-xl-block">
+                <h4>
+                  <a href="#" class="text-white"
+                    >The MediaKnights
+                    <i class="bi-arrow-right" style="font-size: 13px"></i></a
+                  ><br /><small class="fw-normal text-white-50"
+                    >Dynamic media and entertainment company
+                  </small>
+                </h4>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card position-absolute shadow-lg dark p-3 d-none d-lg-block"
+            style="
+              background: #222;
+              width: 21rem;
+              bottom: 0;
+              right: 0;
+              z-index: 5;
+            "
+          >
+            <div class="card-body">
+              <h6
+                class="card-title text-uppercase ls-4 fw-bold mb-4 text-white-50"
+              >
+                Recommendations
+              </h6>
+              <h5 class="h6 fw-semibold mb-4">
+                <a href="#" class="text-light mb-2 d-block"
+                  >Get inspired by my latest video</a
+                >
+                <span class="fw-normal text-white-50"
+                  ><i class="bi-arrow-right" style="font-size: 13px"></i> How to
+                  break the chains</span
+                >
+              </h5>
+              <h5 class="h6 fw-semibold mb-4">
+                <a href="#" class="text-light mb-2 d-block"
+                  >Learn the secret to success</a
+                >
+                <span class="fw-normal text-white-50"
+                  ><i class="bi-arrow-right" style="font-size: 13px"></i>
+                  Success is mindset not a period</span
+                >
+              </h5>
+
+              <a
+                href="https://www.youtube.com/watch?v=tbnzAVRZ9Xc"
+                data-lightbox="iframe"
+                class="image_fade d-block position-relative mb-4 rounded shadow-lg"
+                style="
+                  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYarRSKw6WY8hyhZhse7SCuXMeTcOxFy8o7Q&s')
+                    center center / cover;
+                  height: 150px;
+                "
+                target="_blank"
+              >
+                <i class="bi-play"></i>
+              </a>
+
+              <h5 class="h6 fw-semibold mb-0">
+                <a href="#" class="text-light mb-2 d-block"
+                  >Grow your thoughts</a
+                >
+                <span class="fw-normal text-white-50"
+                  ><i class="bi-arrow-right" style="font-size: 13px"></i> 1000
+                  mindsets for you</span
+                >
+              </h5>
+            </div>
+          </div>
+
+          <a
+            class="rotate-text d-none d-sm-block"
+            data-scrollto="#section-about"
+            data-offset="0"
+            >Scroll down</a
+          >
+        </div>
+      </section>
+      <!-- #slider end -->
+
+      <!-- Content
+		============================================= -->
+      <section id="content">
+        <div class="content-wrap py-0">
+          <div id="section-about" class="text-center page-section">
+            <div class="container">
+              <h2
+                class="mx-auto mb-5 font-body"
+                style="max-width: 700px; font-size: 40px"
+              >
+                Who is PD?
+              </h2>
+
+              <p class="lead mx-auto mb-5" style="max-width: 800px">
+                Prince Davidson is an astute and ambidextrous Business Engineer
+                and Problem Consultant, serving as Managing Partner and Group
+                Chairperson at Brainpharm Group Int’l Ltd. In this capacity, he
+                and his team have been instrumental in initiating, nurturing,
+                and expanding numerous start-ups, medium-sized enterprises, and
+                large corporations.
+                <br />
+                <br />
+                Recognized as a High-Valued Asset (HVA), Mr. Davidson excels in
+                multidisciplinary business and managerial spheres, with a proven
+                track record in the successful development, execution, and
+                management of complex business portfolios with global interests
+                spanning diverse industries such as education and academia,
+                leadership and governance, intelligence, technology,
+                construction, military and security, oil and gas, entertainment,
+                media and public relations.
+              </p>
+
+              <p class="mb-5" style="font-size: 16px">
+                <a href="./about-me.html" class="more-link"
+                  >Learn more <i class="uil uil-angle-right-b"></i
+                ></a>
+              </p>
+            </div>
+          </div>
+
+          <!-- Services
+		============================================= -->
+          <section id="section-services">
+            <div class="content-wrap">
+              <div class="container">
+                <div class="row justify-content-center gutter-50 col-mb-50">
+                  <div class="col-xl-6 col-lg-8 text-center">
+                    <h3 class="h1 fw-bold mb-3">
+                      What do you get from <span>Prince Davidson</span>?
+                    </h3>
+                    <p class="text-larger text-muted">
+                      The best services Lorem ipsum dolor, sit amet consectetur
+                      adipisicing elit. Voluptate possimus quod alias quibusdam
+                      hic.
+                    </p>
+                  </div>
+
+                  <div class="clear"></div>
+
+                  <div class="col-lg-3 col-sm-6">
+                    <div
+                      class="feature-box fbox-effect flex-column bg-light border border-f5 p-4 rounded-3"
+                    >
+                      <div class="fbox-icon mb-4">
+                        <a href="#"
+                          ><img
+                            src="images/icons/social.svg"
+                            alt="Feature Icon"
+                            class="bg-transparent rounded-0"
+                        /></a>
+                      </div>
+                      <div class="fbox-content">
+                        <h3>Business Consulting</h3>
+                        <p>
+                          • Strategic Planning and Strategy
+                          <br />• Business Development <br />• Market Entry
+                          Strategy <br />• OPL Efficiency Optimization
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                    <div
+                      class="feature-box fbox-effect flex-column bg-light border border-f5 p-4 rounded-3"
+                    >
+                      <div class="fbox-icon mb-4">
+                        <a href="#"
+                          ><img
+                            src="images/icons/experience.svg"
+                            alt="Feature Icon"
+                            class="bg-transparent rounded-0"
+                        /></a>
+                      </div>
+                      <div class="fbox-content">
+                        <h3>Project Management</h3>
+                        <p>
+                          • Project Planning and Execution
+                          <br />• Risk Management <br />• Quality Assurance
+                          <br />• Lean Six Sigma Implementation
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                    <div
+                      class="feature-box fbox-effect flex-column bg-light border border-f5 p-4 rounded-3"
+                    >
+                      <div class="fbox-icon mb-4">
+                        <a href="#"
+                          ><img
+                            src="images/icons/content_marketing.svg"
+                            alt="Feature Icon"
+                            class="bg-transparent rounded-0"
+                        /></a>
+                      </div>
+                      <div class="fbox-content">
+                        <h3>Corporate Gov. &amp; Compliance</h3>
+                        <p>
+                          • Governance Frameworks <br />• Compliance Audits
+                          <br />• Policy Development <br />• Board Advisory
+                          Services
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                    <div
+                      class="feature-box fbox-effect flex-column bg-light border border-f5 p-4 rounded-3"
+                    >
+                      <div class="fbox-icon mb-4">
+                        <a href="#"
+                          ><img
+                            src="images/icons/optimizing.svg"
+                            alt="Feature Icon"
+                            class="bg-transparent rounded-0"
+                        /></a>
+                      </div>
+                      <div class="fbox-content">
+                        <h3>Economic &amp; Market Analysis</h3>
+                        <p>
+                          • Industry Analysis <br />• Economic Impact Studies
+                          <br />• Market Research <br />• Feasibility Studies
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="clear my-3"></div>
+
+                  <div class="col-lg-3 col-sm-6">
+                    <div
+                      class="feature-box fbox-effect flex-column bg-light border border-f5 p-4 rounded-3"
+                    >
+                      <div class="fbox-icon mb-4">
+                        <a href="#"
+                          ><img
+                            src="images/icons/social.svg"
+                            alt="Feature Icon"
+                            class="bg-transparent rounded-0"
+                        /></a>
+                      </div>
+                      <div class="fbox-content">
+                        <h3>Leadership Training &amp; Dev.</h3>
+                        <p>
+                          • Executive Coaching <br />• Leadership Workshops
+                          <br />• Team Building <br />• Org. Change Management
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                    <div
+                      class="feature-box fbox-effect flex-column bg-light border border-f5 p-4 rounded-3"
+                    >
+                      <div class="fbox-icon mb-4">
+                        <a href="#"
+                          ><img
+                            src="images/icons/experience.svg"
+                            alt="Feature Icon"
+                            class="bg-transparent rounded-0"
+                        /></a>
+                      </div>
+                      <div class="fbox-content">
+                        <h3>Investment &amp; Trade Advisory</h3>
+                        <p>
+                          • Investment Strategy <br />• Trade Negotiation
+                          Support <br />• International Trade Compliance <br />•
+                          Market Expansion Consulting
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                    <div
+                      class="feature-box fbox-effect flex-column bg-light border border-f5 p-4 rounded-3"
+                    >
+                      <div class="fbox-icon mb-4">
+                        <a href="#"
+                          ><img
+                            src="images/icons/content_marketing.svg"
+                            alt="Feature Icon"
+                            class="bg-transparent rounded-0"
+                        /></a>
+                      </div>
+                      <div class="fbox-content">
+                        <h3>Entrepreneurship &amp; Start-Up Support</h3>
+                        <p>
+                          • Business Plan Development <br />• Start-Up
+                          Mentorship <br />• Funding Strategy <br />• Scale-Up
+                          Strategy
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                    <div
+                      class="feature-box fbox-effect flex-column bg-light border border-f5 p-4 rounded-3"
+                    >
+                      <div class="fbox-icon mb-4">
+                        <a href="#"
+                          ><img
+                            src="images/icons/optimizing.svg"
+                            alt="Feature Icon"
+                            class="bg-transparent rounded-0"
+                        /></a>
+                      </div>
+                      <div class="fbox-content">
+                        <h3>PR &amp; Corp. Communication</h3>
+                        <p>
+                          • Media Relations <br />• Brand Management <br />•
+                          Crisis Communication <br />• Internal Communication
+                          Strategies
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="clear my-3"></div>
+
+                  <div class="col-lg-3 col-sm-6">
+                    <div
+                      class="feature-box fbox-effect flex-column bg-light border border-f5 p-4 rounded-3"
+                    >
+                      <div class="fbox-icon mb-4">
+                        <a href="#"
+                          ><img
+                            src="images/icons/social.svg"
+                            alt="Feature Icon"
+                            class="bg-transparent rounded-0"
+                        /></a>
+                      </div>
+                      <div class="fbox-content">
+                        <h3>Educational &amp; Training Programs</h3>
+                        <p>
+                          • Corporate Training Programs <br />• Technical
+                          Education Dev. <br />• Professional Certification
+                          Prep. <br />• Online Course Creation
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                    <div
+                      class="feature-box fbox-effect flex-column bg-light border border-f5 p-4 rounded-3"
+                    >
+                      <div class="fbox-icon mb-4">
+                        <a href="#"
+                          ><img
+                            src="images/icons/experience.svg"
+                            alt="Feature Icon"
+                            class="bg-transparent rounded-0"
+                        /></a>
+                      </div>
+                      <div class="fbox-content">
+                        <h3>Human Resource Management</h3>
+                        <p>
+                          • Talent Acquisition <br />• HR Strategy Development
+                          <br />• Performance Management <br />• Employee
+                          Engagement
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                    <div
+                      class="feature-box fbox-effect flex-column bg-light border border-f5 p-4 rounded-3"
+                    >
+                      <div class="fbox-icon mb-4">
+                        <a href="#"
+                          ><img
+                            src="images/icons/content_marketing.svg"
+                            alt="Feature Icon"
+                            class="bg-transparent rounded-0"
+                        /></a>
+                      </div>
+                      <div class="fbox-content">
+                        <h3>Intl. Law &amp; Policy Advisory</h3>
+                        <p>
+                          • Trade and Investment Law <br />• Regulatory
+                          Compliance <br />• International Negotiations <br />•
+                          Policy Advocacy
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                    <div
+                      class="feature-box fbox-effect flex-column bg-light border border-f5 p-4 rounded-3"
+                    >
+                      <div class="fbox-icon mb-4">
+                        <a href="#"
+                          ><img
+                            src="images/icons/optimizing.svg"
+                            alt="Feature Icon"
+                            class="bg-transparent rounded-0"
+                        /></a>
+                      </div>
+                      <div class="fbox-content">
+                        <h3>Youth &amp; Community Dev.</h3>
+                        <p>
+                          • Youth Leadership Programs <br />• Community
+                          Development Projects <br />• Social Impact Consulting
+                          <br />• Non-Profit Advisory
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="clear my-3"></div>
+
+                  <div class="col-lg-3 col-sm-6">
+                    <div
+                      class="feature-box fbox-effect flex-column bg-light border border-f5 p-4 rounded-3"
+                    >
+                      <div class="fbox-icon mb-4">
+                        <a href="#"
+                          ><img
+                            src="images/icons/social.svg"
+                            alt="Feature Icon"
+                            class="bg-transparent rounded-0"
+                        /></a>
+                      </div>
+                      <div class="fbox-content">
+                        <h3>Event Speaking &amp; Panel Participation</h3>
+                        <p>
+                          • Keynote Speaking <br />• Conference Panels <br />•
+                          Workshops and Seminars <br />• Motivational Speaking
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- #content end -->
+
+          <!-- Portfolio
+						============================================= -->
+          <h2 class="text-center text-uppercase fw-light ls-3 font-body">
+            My portfolio
+          </h2>
+          <div id="wrapper" style="height: 100dvh" class="mb-5">
+            <section
+              id="slider"
+              style="height: 100%"
+              class="block-hero-9 slider-element swiper_wrapper"
+            >
+              <div class="slider-inner">
+                <div class="swiper swiper-parent">
+                  <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide slide-1">
+                      <div class="row align-items-center g-0">
+                        <!-- Image -->
+                        <div
+                          class="col-md-5 min-vh-50 min-vh-md-100"
+                          style="
+                            background: url('images/hero-9/1.jpg') center center;
+                            background-size: cover;
+                          "
+                        ></div>
+                        <!-- Text -->
+                        <div class="col-xl-5 col-lg-6 col-md-7 offset-lg-1">
+                          <div class="col-padding">
+                            <h6 class="mb-4 ls-1 text-uppercase fw-light">
+                              Office Decor
+                            </h6>
+                            <h1 class="display-3 fw-bolder">
+                              We Decorate<br />Your Office
+                            </h1>
+                            <h4 class="mt-4 fw-light">
+                              Rapidiously conceptualize inexpensive value
+                              through functionalized markets. Enthusiastically
+                              integrate distinctive web services vis-a-vis
+                              end-to-end ROI. Assertively fashion best-of-breed
+                              products for installed base alignments.
+                              Enthusiastically.
+                            </h4>
+                            <a
+                              href="#"
+                              class="button button-xlarge button-circle text-capitalize ls-0 mt-2 px-5 button-dark h-bg-dark"
+                              style="background-color: var(--color)"
+                              >Explore Now <i class="bi-arrow-right"></i
+                            ></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide slide-2">
+                      <div
+                        class="row align-items-center justify-content-between g-0"
+                      >
+                        <!-- Image -->
+                        <div
+                          class="col-md-5 min-vh-50 min-vh-md-100 order-md-last"
+                          style="
+                            background: url('images/hero-9/2.jpg') center center;
+                            background-size: cover;
+                          "
+                        ></div>
+                        <!-- Text -->
+                        <div class="col-xl-5 col-lg-6 col-md-7 offset-lg-1">
+                          <div class="col-padding">
+                            <h6 class="mb-4 ls-1 text-uppercase fw-light">
+                              Home Decor
+                            </h6>
+                            <h1 class="display-3 fw-bolder">
+                              We Interior Your Home
+                            </h1>
+                            <h4 class="mt-4 fw-light">
+                              Rapidiously conceptualize inexpensive value
+                              through functionalized markets. Enthusiastically
+                              integrate distinctive web services vis-a-vis
+                              end-to-end ROI. Assertively fashion best-of-breed
+                              products for installed base alignments.
+                              Enthusiastically.
+                            </h4>
+                            <a
+                              href="#"
+                              class="button button-xlarge button-circle text-capitalize ls-0 mt-2 px-5 button-dark h-bg-dark"
+                              style="background-color: var(--color)"
+                              >Explore Now <i class="bi-arrow-right"></i
+                            ></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide slide-1">
+                      <div class="row align-items-center g-0">
+                        <!-- Image -->
+                        <div
+                          class="col-md-5 min-vh-50 min-vh-md-100"
+                          style="
+                            background: url('images/hero-9/3.jpg') center center;
+                            background-size: cover;
+                          "
+                        ></div>
+                        <!-- Text -->
+                        <div class="col-xl-5 col-lg-6 col-md-7 offset-lg-1">
+                          <div class="col-padding">
+                            <h6 class="mb-4 ls-1 text-uppercase fw-light">
+                              Cafès/Restaurant
+                            </h6>
+                            <h1 class="display-3 fw-bolder">
+                              We Decor Your Cafè
+                            </h1>
+                            <h4 class="mt-4 fw-light">
+                              Rapidiously conceptualize inexpensive value
+                              through functionalized markets. Enthusiastically
+                              integrate distinctive web services vis-a-vis
+                              end-to-end ROI. Assertively fashion best-of-breed
+                              products for installed base alignments.
+                              Enthusiastically.
+                            </h4>
+                            <a
+                              href="#"
+                              class="button button-xlarge button-circle text-capitalize ls-0 mt-2 px-5 button-dark h-bg-dark"
+                              style="background-color: var(--color)"
+                              >Explore Now <i class="bi-arrow-right"></i
+                            ></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="swiper-pagination text-end me-5 rounded-pill bg-white"
+                  ></div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <!-- #wrapper end -->
+
+          <!-- Testimonial
+					============================================= -->
+          <h2 class="text-center text-uppercase fw-light ls-3 mt-6 font-body">
+            What they say about me
+          </h2>
+
+          <div id="wrapper">
+            <section id="content">
+              <div class="content-wrap py-0 overflow-visible">
+                <div
+                  id="section-testimonials"
+                  class="position-relative border-top border-bottom border-f5"
+                >
+                  <div class="row section-sticky min-vh-100 mx-0 g-0">
+                    <div
+                      class="col-lg-6 d-flex flex-column min-vh-50 min-vh-lg-100 justify-content-center align-items-center"
+                    >
+                      <h2
+                        class="display-3 mb-0 fw-bolder text-dark font-display px-5"
+                      >
+                        <span class="op-02 text-dark">"</span>When I make my
+                        Clients smile that's Real Success.<span
+                          class="op-02 text-dark"
+                          >"</span
+                        >
+                      </h2>
+                    </div>
+
+                    <div id="ts-slider" class="col-lg-6 dark min-vh-100">
+                      <div
+                        id="slider"
+                        class="swiper_wrapper customjs min-vh-100 px-0 px-lg-4"
+                      >
+                        <div class="swiper ts swiper-parent">
+                          <div class="swiper-wrapper">
+                            <div
+                              class="swiper-slide gradient-blue-purple text-center d-flex flex-column justify-content-center align-items-center px-5"
+                            >
+                              <!-- <img
+                                class="rounded-circle mb-4"
+                                src="demos/articles/images/authors/1.jpg"
+                                alt="Image"
+                              /> -->
+                              <i class="fa-solid fa-user"></i>
+                              <h3 class="mb-0">Bhen</h3>
+                              <h5
+                                class="text-muted fw-normal mb-4 text-white-50"
+                              >
+                                Developer
+                              </h5>
+                              <p
+                                class="text-larger font-secondary fst-italic mb-0"
+                              >
+                                "Kindly provide quote."
+                              </p>
+                            </div>
+
+                            <div
+                              class="swiper-slide gradient-grey-brown text-center d-flex flex-column justify-content-center align-items-center px-5"
+                            >
+                              <!-- <img
+                                class="rounded-circle mb-4"
+                                src="demos/articles/images/authors/2.jpg"
+                                alt="Image"
+																/> -->
+                              <i class="fa-solid fa-user"></i>
+                              <h3 class="mb-0">Roland Adade</h3>
+                              <h5
+                                class="text-muted fw-normal mb-4 text-white-50"
+                              >
+                                Designer
+                              </h5>
+                              <p
+                                class="text-larger font-secondary fst-italic mb-0"
+                              >
+                                "Kindly provide quote."
+                              </p>
+                            </div>
+
+                            <div
+                              class="swiper-slide gradient-earth text-center d-flex flex-column justify-content-center align-items-center px-5"
+                            >
+                              <!-- <img
+                                class="rounded-circle mb-4"
+                                src="demos/articles/images/authors/3.jpg"
+                                alt="Image"
+                              /> -->
+                              <i class="fa-solid fa-user"></i>
+                              <h3 class="mb-0">Lady Diana Naa Klokor Lartey</h3>
+                              <h5
+                                class="text-muted fw-normal mb-4 text-white-50"
+                              >
+                                Developer
+                              </h5>
+                              <p
+                                class="text-larger font-secondary fst-italic mb-0"
+                              >
+                                "Kindly provide quote."
+                              </p>
+                            </div>
+                          </div>
+                          <div class="swiper-navs">
+                            <div class="slider-arrow-left">
+                              <i class="bi-arrow-left"></i>
+                            </div>
+                            <div class="slider-arrow-right">
+                              <i class="bi-arrow-right"></i>
+                            </div>
+                          </div>
+                          <div class="swiper-scrollbar">
+                            <div class="swiper-scrollbar-drag"></div>
+                            <div class="swiper-number"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- #content end -->
+          </div>
+          <!-- #wrapper end -->
+
+          <div class="page-section">
+            <div class="content-wrap py-0">
+              <div class="container">
+                <h2
+                  class="text-center text-uppercase fw-light ls-3 mt-6 font-body"
+                >
+                  Prince Davidson on or Prince Davidson Philosophy:
+                </h2>
+                <div class="row">
+                  <div class="col-lg-6 px-5">
+                    <p style="text-align: justify">
+                      <span style="font-weight: bold">Money:</span> Money is a
+                      means of exchange for value. If you chase money, money
+                      will never be reached, if you chase value, money will
+                      chase after you.
+                      <br />
+                      The more you increase value, the more money you attract.
+                      <br />
+                      <br />
+                      <span style="font-weight: bold">Sex:</span> Everything
+                      revolves around sex and sex is worship.
+                      <br />
+                      <br />
+                      <span style="font-weight: bold">Ego:</span> The rise of
+                      ego is the death of mediocrity. It is ego that wakes you
+                      up in the morning and burns the desire in you to want to
+                      do better than yesterday.
+                      <br />
+                      <br />
+                      <span style="font-weight: bold">Marriage:</span> Marriage
+                      is a sacred decision between two people to exchange their
+                      lives and everything in it.
+                      <br />
+                      <br />
+                      <span style="font-weight: bold">Love:</span> Love is death
+                      (Odõ yewu), love is blood sacrifice. Love is the greatest
+                      sacrifice because it is the sacrifice of one’s own self,
+                      to take your own life and submit it to someone else that
+                      often times, not long ago was a total stranger.
+                      <br />
+                      <br />
+                      <span style="font-weight: bold">Children:</span> are a
+                      man’s assignment to build the formidable army that will
+                      guard the gates of society.
+                      <br />
+                      <br />
+                      <span style="font-weight: bold">Future:</span> The future
+                      is literally the next second, not the next year.
+                      <br />
+                      <br />
+                      <span style="font-weight: bold">Life:</span> The ultimate
+                      pursuit of life is not happiness but purpose.
+                      <br />
+                      <br />
+                      <span style="font-weight: bold">Death:</span> is a window
+                      to life abundant.
+                      <br />
+                      <br />
+                      <span style="font-weight: bold">Hope:</span> were there
+                      not to be hope, despair would have killed us today.
+                      <br />
+                      <br />
+                      <span style="font-weight: bold">Believe:</span> is akin to
+                      knowledge, the ability to know that something exists free
+                      of every doubt.
+                    </p>
+                  </div>
+                  <div class="col-lg-6 px-5">
+                    <p style="text-align: justify">
+                      <span style="font-weight: bold">Faith:</span> is
+                      synonymous to wisdom, the ability to do despite realities.
+                      <br />
+                      <br />
+                      <span style="font-weight: bold">Religion:</span> is a
+                      useless creation of man to fill the void of emptiness
+                      <br />
+                      <br />
+                      <span style="font-weight: bold">Purpose:</span> the
+                      purpose of life is a life of purpose. We do not do our
+                      purpose, is whatever we do that is our purpose per time,
+                      because our ultimate purpose is broken down into
+                      installments of activities that incrementally culminates
+                      in the ultimate destination. And so, purpose is not
+                      properly viewed, it is rather better previewed.
+                      <br />
+                      <br />
+                      <span style="font-weight: bold">Success:</span> like
+                      purpose, success is broken down into smaller bits, but
+                      ultimate success in life is not measured by the amount of
+                      money or by the accumulation of titles we attain, even
+                      though these might be consequences. It is rather measured
+                      in the fulfilment of one's purpose through perseverance,
+                      consistency and resilience in the face of successive
+                      failures, daunting adversaries and seemingly
+                      insurmountable hurdles and the impact to society thereof.
+                      <br />
+                      <br />
+                      <span style="font-weight: bold">Discipline:</span> is the
+                      building of knowledge, and knowledge produces power and
+                      power is the ability to do. In other words, discipline is
+                      the ability to do whatever you set out to do defying all
+                      distractions and pain and limitations.
+                      <br />
+                      <br />
+                      <span style="font-weight: bold">Leadership:</span> if
+                      everybody can solve a problem, however small it is, then
+                      everybody can be a leader. Because leadership is simply
+                      rising to the occasion, or solving problems of a
+                      constituent that no one else steps up to solve.
+                      <br />
+                      <br />
+                      <span style="font-weight: bold">Governance:</span> whether
+                      corporate or public, governance is fundamentally the
+                      creation and functionality of systems and policies and the
+                      proper appropriation and management of public funds,
+                      opinions and trust. Whether these systems be effective or
+                      not for the greater good is another issue leadership must
+                      account for.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="section-blog" class="page-section">
+            <h2 class="text-center text-uppercase fw-light ls-3 font-body">
+              Latest from my Blog
+            </h2>
+
+            <div class="section mb-0">
+              <div class="container">
+                <div class="row posts-md mt-5 col-mb-50 mb-0">
+                  <!-- <div class="entry col-md-6">
+                    <div class="grid-inner row align-items-center">
+                      <div class="col-lg-6">
+                        <div class="entry-image">
+                          <a href="#"
+                            ><img src="one-page/images/blog/1.jpg" alt="Paris"
+                          /></a>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 mt-3 mt-lg-0">
+                        <span class="before-heading fst-normal"
+                          >Press &amp; Media</span
+                        >
+                        <div class="entry-title text-transform-none">
+                          <h3 class="fw-normal">
+                            <a href="#">Global Meetup Program is Launching!</a>
+                          </h3>
+                        </div>
+                        <div class="entry-content">
+                          <a href="#" class="more-link"
+                            >Read more <i class="uil uil-angle-right-b"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="entry col-md-6">
+                    <div class="grid-inner row align-items-center">
+                      <div class="col-lg-6">
+                        <div class="entry-image">
+                          <a href="#"
+                            ><img src="one-page/images/blog/2.jpg" alt="Paris"
+                          /></a>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 mt-3 mt-lg-0">
+                        <span class="before-heading fst-normal"
+                          >Inside Scoops</span
+                        >
+                        <div class="entry-title text-transform-none">
+                          <h3 class="fw-normal">
+                            <a href="#"
+                              >The New YouTube Economy unfolds itself</a
+                            >
+                          </h3>
+                        </div>
+                        <div class="entry-content">
+                          <a href="#" class="more-link"
+                            >Read more <i class="uil uil-angle-right-b"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="entry col-md-6">
+                    <div class="grid-inner row align-items-center">
+                      <div class="col-lg-6">
+                        <div class="entry-image">
+                          <a href="#"
+                            ><img src="one-page/images/blog/3.jpg" alt="Paris"
+                          /></a>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 mt-3 mt-lg-0">
+                        <span class="before-heading fst-normal"
+                          >Video Blog</span
+                        >
+                        <div class="entry-title text-transform-none">
+                          <h3 class="fw-normal">
+                            <a href="#">Kicking Off Design Party in Style</a>
+                          </h3>
+                        </div>
+                        <div class="entry-content">
+                          <a href="#" class="more-link"
+                            >Read more <i class="uil uil-angle-right-b"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="entry col-md-6">
+                    <div class="grid-inner row align-items-center">
+                      <div class="col-lg-6">
+                        <div class="entry-image">
+                          <a href="#"
+                            ><img src="one-page/images/blog/4.jpg" alt="Paris"
+                          /></a>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 mt-3 mt-lg-0">
+                        <span class="before-heading fst-normal"
+                          >Inspiration</span
+                        >
+                        <div class="entry-title text-transform-none">
+                          <h3 class="fw-normal">
+                            <a href="#">Top Ten Signs You're a Designer</a>
+                          </h3>
+                        </div>
+                        <div class="entry-content">
+                          <a href="#" class="more-link"
+                            >Read more <i class="uil uil-angle-right-b"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="container mt-6">
+              <div
+                id="oc-clients"
+                class="owl-carousel mt-5 image-carousel carousel-widget"
+                data-margin="80"
+                data-loop="true"
+                data-nav="false"
+                data-autoplay="5000"
+                data-pagi="false"
+                data-items-xs="2"
+                data-items-sm="3"
+                data-items-md="4"
+                data-items-lg="5"
+                data-items-xl="6"
+              >
+                <div class="oc-item">
+                  <a href="#"
+                    ><img src="images/clients/1.png" alt="Clients"
+                  /></a>
+                </div>
+                <div class="oc-item">
+                  <a href="#"
+                    ><img src="images/clients/2.png" alt="Clients"
+                  /></a>
+                </div>
+                <div class="oc-item">
+                  <a href="#"
+                    ><img src="images/clients/3.png" alt="Clients"
+                  /></a>
+                </div>
+                <div class="oc-item">
+                  <a href="#"
+                    ><img src="images/clients/4.png" alt="Clients"
+                  /></a>
+                </div>
+                <div class="oc-item">
+                  <a href="#"
+                    ><img src="images/clients/5.png" alt="Clients"
+                  /></a>
+                </div>
+                <div class="oc-item">
+                  <a href="#"
+                    ><img src="images/clients/6.png" alt="Clients"
+                  /></a>
+                </div>
+                <div class="oc-item">
+                  <a href="#"
+                    ><img src="images/clients/7.png" alt="Clients"
+                  /></a>
+                </div>
+                <div class="oc-item">
+                  <a href="#"
+                    ><img src="images/clients/8.png" alt="Clients"
+                  /></a>
+                </div>
+                <div class="oc-item">
+                  <a href="#"
+                    ><img src="images/clients/9.png" alt="Clients"
+                  /></a>
+                </div>
+                <div class="oc-item">
+                  <a href="#"
+                    ><img src="images/clients/10.png" alt="Clients"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="section-contact" class="page-section pt-0">
+            <div class="container">
+              <div class="mx-auto mt-5" style="max-width: 850px">
+                <div class="form-widget">
+                  <div class="form-result"></div>
+
+                  <form
+                    class="row mb-0"
+                    id="template-contactform"
+                    name="template-contactform"
+                    action="include/form.php"
+                    method="post"
+                  >
+                    <div class="form-process">
+                      <div class="css3-spinner">
+                        <div class="css3-spinner-scale-ripple">
+                          <div></div>
+                          <div></div>
+                          <div></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                      <input
+                        type="text"
+                        id="template-contactform-name"
+                        name="template-contactform-name"
+                        value=""
+                        class="form-control border-form-control required"
+                        placeholder="Name"
+                      />
+                    </div>
+                    <div class="col-md-6 mb-4">
+                      <input
+                        type="email"
+                        id="template-contactform-email"
+                        name="template-contactform-email"
+                        value=""
+                        class="required email form-control border-form-control"
+                        placeholder="Email Address"
+                      />
+                    </div>
+
+                    <div class="w-100"></div>
+
+                    <div class="col-md-4 mb-4">
+                      <input
+                        type="text"
+                        id="template-contactform-phone"
+                        name="template-contactform-phone"
+                        value=""
+                        class="form-control border-form-control"
+                        placeholder="Phone"
+                      />
+                    </div>
+
+                    <div class="col-md-8 mb-4">
+                      <input
+                        type="text"
+                        id="template-contactform-subject"
+                        name="subject"
+                        value=""
+                        class="required form-control border-form-control"
+                        placeholder="Subject"
+                      />
+                    </div>
+
+                    <div class="w-100"></div>
+
+                    <div class="col-12 mb-4">
+                      <textarea
+                        class="required form-control border-form-control"
+                        id="template-contactform-message"
+                        name="template-contactform-message"
+                        rows="7"
+                        cols="30"
+                        placeholder="Your Message"
+                      ></textarea>
+                    </div>
+
+                    <div class="col-12 text-center mb-4">
+                      <button
+                        class="button button-border button-circle fw-medium ms-0 mt-4"
+                        type="submit"
+                        id="template-contactform-submit"
+                        name="template-contactform-submit"
+                        value="submit"
+                      >
+                        Send Message
+                      </button>
+                      <br />
+                      <small class="d-block mt-3 text-muted"
+                        >I'll do our best to get back to you within 6-8 working
+                        hours.</small
+                      >
+                    </div>
+
+                    <div class="w-100"></div>
+
+                    <div class="col-12 d-none">
+                      <input
+                        type="text"
+                        id="template-contactform-botcheck"
+                        name="template-contactform-botcheck"
+                        value=""
+                        class="form-control"
+                      />
+                    </div>
+
+                    <input
+                      type="hidden"
+                      name="prefix"
+                      value="template-contactform-"
+                    />
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- #content end -->
+
+      <!-- Footer
+		============================================= -->
+      <footer id="footer" class="dark border-0">
+        <div class="container text-center">
+          <div class="footer-widgets-wrap">
+            <div class="row mx-auto">
+              <div class="col-lg-4">
+                <div class="widget">
+                  <h4>Site Links</h4>
+
+                  <ul class="list-unstyled footer-site-links mb-0">
+                    <li>
+                      <a
+                        href="#"
+                        data-scrollto="#wrapper"
+                        data-easing="easeInOutExpo"
+                        data-speed="1250"
+                        data-offset="70"
+                        >Top</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        data-scrollto="#section-about"
+                        data-easing="easeInOutExpo"
+                        data-speed="1250"
+                        data-offset="70"
+                        >About</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        data-scrollto="#section-works"
+                        data-easing="easeInOutExpo"
+                        data-speed="1250"
+                        data-offset="70"
+                        >Works</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        data-scrollto="#section-services"
+                        data-easing="easeInOutExpo"
+                        data-speed="1250"
+                        data-offset="70"
+                        >Services</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        data-scrollto="#section-blog"
+                        data-easing="easeInOutExpo"
+                        data-speed="1250"
+                        data-offset="70"
+                        >Blog</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        data-scrollto="#section-contact"
+                        data-easing="easeInOutExpo"
+                        data-speed="1250"
+                        data-offset="70"
+                        >Contact</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="widget subscribe-widget" data-loader="button">
+                  <h4>Subscribe</h4>
+
+                  <div class="widget-subscribe-form-result"></div>
+                  <form
+                    id="widget-subscribe-form"
+                    action="include/subscribe.php"
+                    method="post"
+                    class="mb-0"
+                  >
+                    <input
+                      type="email"
+                      id="widget-subscribe-form-email"
+                      name="widget-subscribe-form-email"
+                      class="form-control form-control-lg not-dark required email"
+                      placeholder="Your Email Address"
+                    />
+                    <button
+                      class="button button-border button-circle button-light mt-4"
+                      type="submit"
+                    >
+                      Subscribe Now
+                    </button>
+                  </form>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="widget">
+                  <h4>Contact</h4>
+
+                  <p class="lead">
+                    <a href="mailto:me@princedavivdson.com"
+                      >me@princedavivdson.com</a
+                    ><br /><a href="tel:+233505772972">+233 50 577 2972</a>
+                  </p>
+
+                  <div class="d-flex justify-content-center mt-4">
+                    <a
+                      href="#"
+                      class="social-icon si-small bg-transparent h-bg-facebook"
+                      title="Facebook"
+                    >
+                      <i class="fa-brands fa-facebook-f"></i>
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a
+                      href="#"
+                      class="social-icon si-small bg-transparent h-bg-x-twitter"
+                      title="Twitter"
+                    >
+                      <i class="fa-brands fa-x-twitter"></i>
+                      <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a
+                      href="#"
+                      class="social-icon si-small bg-transparent h-bg-github"
+                      title="Github"
+                    >
+                      <i class="fa-brands fa-github"></i>
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a
+                      href="#"
+                      class="social-icon si-small bg-transparent h-bg-pinterest"
+                      title="Pinterest"
+                    >
+                      <i class="fa-brands fa-pinterest-p"></i>
+                      <i class="fa-brands fa-pinterest-p"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="copyrights">
+          <div class="container text-center">
+            Copyrights Prince Davidson 2020 | All Rights Reserved
+          </div>
+        </div>
+      </footer>
+      <!-- #footer end -->
+    </div>
+    <!-- #wrapper end -->
+
+    <!-- Go To Top
+	============================================= -->
+    <div id="gotoTop" class="uil uil-angle-up"></div>
+
+    <!-- JavaScripts
+	============================================= -->
+    <script src="js/plugins.min.js"></script>
+    <script src="js/functions.bundle.js"></script>
+    <script>
+      window.addEventListener("load", function () {
+        var swiper_ts = new Swiper(".swiper.ts", {
+          direction: "vertical",
+          spaceBetween: 0,
+          simulateTouch: false,
+          speed: 650,
+          mousewheel: {
+            forceToAxis: true,
+            releaseOnEdges: true,
+            eventsTarget: "#section-testimonials",
+          },
+          slidesPerView: 1,
+          effect: "fade",
+          navigation: {
+            nextEl: ".ts .slider-arrow-right",
+            prevEl: ".ts .slider-arrow-left",
+          },
+          scrollbar: {
+            el: ".ts .swiper-scrollbar",
+            hide: false,
+            snapOnRelease: true,
+          },
+          pagination: {
+            el: ".ts .swiper-number",
+            type: "fraction",
+            renderFraction: function (currentClass, totalClass) {
+              return (
+                '<span class="' +
+                currentClass +
+                '"></span>' +
+                '<span class="' +
+                totalClass +
+                '"></span>'
+              );
+            },
+          },
+          freeModeSticky: true,
+        });
+
+        document.addEventListener("scroll", function () {
+          var sectionOffsetTop = document
+            .getElementById("ts-slider")
+            .getBoundingClientRect().top;
+
+          if (sectionOffsetTop < 100) {
+            swiper_ts.mousewheel.enable();
+          } else {
+            swiper_ts.mousewheel.disable();
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
